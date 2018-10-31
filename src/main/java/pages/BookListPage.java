@@ -33,7 +33,7 @@ public class BookListPage extends BasePage {
         List<WebElement> links = new ArrayList<WebElement>();
         int max = getNumberOfBooks();
 
-        //Could not find a way to get URLs from bookList so decided to iterate though the list (found similar solution online)
+        //Could not find a way to get URLs from bookList so decided to iterate through the list (found similar solution online)
         for (int i = 1; i <= max ; i++) {
             links.add(driver.findElement(By.xpath("/html/body/div/div/div[2]/li["+i+"]/a")));
         }

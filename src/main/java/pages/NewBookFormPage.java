@@ -11,22 +11,22 @@ public class NewBookFormPage extends BasePage {
         super(driver, wait);
     }
 
-    @FindBy (xpath = "//*[@id=\"title\"]")
+    @FindBy (id = "title")
     WebElement bookTitle;
 
-    @FindBy(xpath = "//*[@id=\"author\"]")
+    @FindBy(id = "author")
     WebElement bookAuthor;
 
-    @FindBy(xpath = "//*[@id=\"summary\"]")
+    @FindBy(id = "summary")
     WebElement bookSummary;
 
-    @FindBy(xpath = "//*[@id=\"isbn\"]")
+    @FindBy(id = "isbn")
     WebElement bookIsbn;
 
-    @FindBy(xpath = "//*[@id=\"5b6714c93809970014e31c9a\"]")
+    @FindBy(id = "5b6714c93809970014e31c9a")
     WebElement checkBoxFiction;
 
-    @FindBy(xpath = "/html/body/div/div/div[2]/form/button")
+    @FindBy(tagName = "button")
     WebElement submitButton;
 
     private String createBookURL = "https://raamatukogu.herokuapp.com/catalog/book/create";
